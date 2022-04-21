@@ -1,14 +1,11 @@
 import AllCards from "./allCards";
 import "./App.css";
-import Card from "./Components/Card";
 
 function App() {
   return (
-    <section id="landingPage">
-      landingPage
-      {/* <Card /> */}
+    <main>
       <AllCards />
-    </section>
+    </main>
   );
 }
 

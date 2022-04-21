@@ -10,10 +10,12 @@ function AllCards() {
     console.log(item.name);
     items.push(item);
   });
-  console.log(items);
 
   return (
-    <section className="card"> {items ? <Card item={items} /> : null} </section>
+    <section className="allCards">
+      {" "}
+      {items ? <Card items={items} /> : null}{" "}
+    </section>
   );
 }
 
