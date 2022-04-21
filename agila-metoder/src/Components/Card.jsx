@@ -22,7 +22,7 @@ function Card(props) {
 
       {props.items.map((item, i) => (
         <section key={i} onClick={() => openModale({ item })}>
-          {/* <img src={item.img}></img> */}
+          <img src={item.img}></img>
           <h1>{item.name}</h1>
           <h3>{item.slogan}</h3>
         </section>
@@ -32,7 +32,7 @@ function Card(props) {
           <li>{chosenItem.name}</li>
           <li>{chosenItem.slogan}</li>
           <li>{chosenItem.description}</li>
-          {/* <img src={chosenItem.img}></img> */}
+          <img src={chosenItem.img}></img>
           <aside onClick={() => setModal(false)}>X</aside>
         </div>
       ) : null}
