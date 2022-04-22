@@ -1,7 +1,8 @@
 import { team, ceremonies, artifacts } from "./Components/data";
-import { Link } from "react-router-dom";
+
 import Card from "./Components/Card";
 import { useEffect, useState } from "react";
+import Navbar from "./Components/TopNav";
 
 function FirstPage() {
   const [click, setClick] = useState("");
@@ -20,11 +21,7 @@ function FirstPage() {
 
   return (
     <section id="mainPage" className="scroller">
-      {" "}
-      <Link to="/">
-        <h1>Scrum</h1>
-        <p> - ett agilt arbetssätt</p>{" "}
-      </Link>
+      <Navbar />
       <section className={click ? "toggle-nav" : null}>
         <div>
           <h1 onClick={(e) => handleClick(e)}>Teamet </h1>
@@ -42,10 +39,9 @@ function FirstPage() {
       {click === "Teamet" ? <Card items={teamArray} /> : null}{" "}
       {click === "Artifacts" ? <Card items={artifactsArray} /> : null}{" "}
       {click === "Processen" ? <Card items={ceremoniesArray} /> : null}{" "}
-      <Link to="/quiz">
+      <footer>
         <p> © Skogis i centrum AB </p>
-        <p> Take the quiz </p>
-      </Link>
+      </footer>
     </section>
   );
 }

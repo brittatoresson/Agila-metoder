@@ -39,6 +39,11 @@ a {
 h1 {
   cursor: pointer;
 }
+footer,
+nav {
+  text-align: right;
+  padding: 0%;
+}
 
 .scroller {
   max-height: 90vh;
