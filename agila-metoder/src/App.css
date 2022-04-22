@@ -31,12 +31,22 @@ li {
 section {
   height: auto;
 }
+a {
+  text-decoration: none;
+  color: var(--color);
+  font-weight: 600;
+}
+h1 {
+  cursor: pointer;
+}
 
 .scroller {
   max-height: 90vh;
   overflow-y: scroll;
 }
-#mainPage {
+
+#mainPage,
+#home {
   margin: 2vw;
   padding-top: 1vh;
   text-align: center;
@@ -76,12 +86,16 @@ section {
 .cards {
   padding-bottom: 5vh;
 }
+.cards section:first-child h1 {
+  cursor: auto;
+}
 .cards section:first-child img {
   display: none;
 }
 
 aside {
   text-align: right;
+  cursor: pointer;
 }
 
 .toggle-nav {
