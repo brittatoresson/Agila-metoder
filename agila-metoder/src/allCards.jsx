@@ -3,7 +3,7 @@ import { team, ceremonies, artifacts } from "./Components/data";
 import Card from "./Components/Card";
 import { useEffect, useState } from "react";
 
-function AllCards() {
+function MainPage() {
   const [click, setClick] = useState("");
   let teamArray = [];
   let ceremoniesArray = [];
@@ -19,7 +19,7 @@ function AllCards() {
   }
 
   return (
-    <section className="allCards">
+    <section id="mainPage" className="scroller">
       {" "}
       <h1>Scrum</h1>
       <p> - ett agilt arbetssätt</p>
@@ -44,4 +44,4 @@ function AllCards() {
   );
 }
 
-export default AllCards;
+export default MainPage;

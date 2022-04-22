@@ -13,18 +13,29 @@ function Card(props) {
       {props.items.map((item, i) => (
         <section key={i} onClick={() => openModale({ item })}>
           <img src={item.img}></img>
-          {item.main ? <h1>{item.main}</h1> : null}
+          <h1>{item.main}</h1>
           <h1>{item.name}</h1>
-          <h3>{item.slogan}</h3>
+          <p>{item.slogan}</p>
         </section>
       ))}
+
+      {/* open modal */}
       {chosenItem ? (
-        <div className={modal ? "display-cards" : "display-none"}>
-          <li>{chosenItem.name}</li>
+        <div className={modal === true ? "display-cards" : "display-none"}>
+          <aside onClick={() => setModal(false)}>X</aside>
+          <div>
+            <img src={chosenItem.img}></img>
+            <li>{chosenItem.name}</li>
+          </div>
           <li>{chosenItem.slogan}</li>
           <li>{chosenItem.description}</li>
-          <img src={chosenItem.img}></img>
-          <aside onClick={() => setModal(false)}>X</aside>
+          {chosenItem.extraInfo ? (
+            <li>
+              <a target="_blank" href={chosenItem.extraInfo}>
+                Lär dig mera här
+              </a>
+            </li>
+          ) : null}
         </div>
       ) : null}
     </section>

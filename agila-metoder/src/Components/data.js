@@ -8,7 +8,9 @@ export const team = [
     slogan:
       "Pia Produktägare - prioriterar backlog, produktens ambassadör och får pang för pengarna",
     description:
-      "Produktägaren är beställaren av uppdraget och hjälper teamet att prioritera arbetet för att skapa ett högt värde för kunden. Produktägaren prioriterar i backlogen. ",
+      "Produktägaren är beställaren av uppdraget och hjälper teamet att prioritera arbetet för att skapa ett högt värde för kunden. Produktägaren prioriterar backlogen. ",
+    extraInfo:
+      "https://www.scrum.org/professional-scrum-product-owner-certifications",
     img: "/Img/womanProfil.png",
   },
   {
@@ -18,6 +20,9 @@ export const team = [
       "Sara scrum master - scrumifierar arbetssättet, strukturerar teamet, samlar till stand-ups, samordnar team och PO",
     description:
       "En Scrum Master hjälper teamet framåt i rätt riktning, ser till så att teamet jobbar agilt på bästa vis. Scrum master kan också vara länken mellan teamet och produktägaren. ",
+    extraInfo:
+      "https://open.spotify.com/episode/49FoMshorfvDP32XmKAPn1?si=33f07469bab74794",
+
     img: "/Img/manProfil.png",
   },
   {
@@ -27,6 +32,7 @@ export const team = [
       "Urban utvecklare - übersnbb skapare,  utformar koden och utmanar designen",
     description:
       "Utvecklarna är dom som skapar eller utvecklar projektet. De bestämmer hur och hur snabbt features kommer lanseras/produceras. Utvecklingsteamet ska bestå av individer från olika dicepliner som täcker in de efterfrågade kompetenser som behövs för att skapa produkten. Exempelvis designer, programmerare, testare",
+    extraInfo: "????",
 
     img: "/Img/teamWomen.png",
   },
