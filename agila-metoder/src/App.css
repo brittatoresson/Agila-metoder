@@ -1,5 +1,6 @@
 main {
   width: 500px;
+  min-height: 800px;
   margin: auto;
   font-family: "Raleway", sans-serif;
   background-color: lightsteelblue;
@@ -20,4 +21,13 @@ img {
 }
 */ .display-none {
   background-color: green;
+}
+
+.toggle-nav {
+  /* font-size: small; */
+  display: flex;
+  flex-direction: row;
+}
+.toggle-nav div {
+  padding: 1rem;
 }
