@@ -1,4 +1,4 @@
-import FirstPage from "../allCards";
+import FirstPage from "../MainContent";
 
 function Info() {
   return <FirstPage />;

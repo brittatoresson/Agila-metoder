@@ -1,3 +1,5 @@
+let helj = { 2: "hej", 2: "jpp" };
+
 export const team = [
   {
     main: "Teamet består av medlemmar som med sin gemensamma kunskap kan skapa en given produkt, teamest storlek kan variera men det ska inte föra vör många ej för fp 3-9.",
@@ -42,7 +44,7 @@ export const artifacts = [
     main: "Artifacts är den information eller grund som teamet behöver för att utveckla produkten",
   },
   {
-    id: "0",
+    id: "3",
     name: "Produckt backlog",
     ansvarig: "Produktägaren",
     description:
@@ -50,15 +52,15 @@ export const artifacts = [
     img: "/Img/backlog (1).png",
   },
   {
-    id: "1",
+    id: "4",
     name: "Sprint Backlog",
-    ansvarig: "utvecklingsteamet",
+    ansvarig: "Teamet",
     description:
       "en kortare ”att göra”-lista. Här väljer teamet ut vilka User Stories som de ska arbeta med under kommande sprint. Här kan alla i teamet vara med och bestämma. ",
     img: "/Img/tasks.png",
   },
   {
-    id: "2",
+    id: "5",
     name: "Burndonw Chart",
     ansvarig: "",
     description:
@@ -71,41 +73,100 @@ export const ceremonies = [
     main: "Den agila processen består av olika cermonier som driver arbetet framåt ",
   },
   {
-    id: "0",
+    id: "6",
     name: "Sprint",
     ansvarig: "Teamet",
     description:
       "En fördefinierad arbetsperiod där man jobbar med vad som bestämdes under Sprint Planningint",
-    img: "/Img/person-running-on-a-treadmill-silhouette-from-side-view-svgrepo-com.svg",
+    img: "/Img/running.png",
   },
   {
-    id: "1",
+    id: "7",
     name: "Sprint planning",
     ansvarig: "Teamet",
     description:
       "Här bestämmer teamet vad som ska genomföras under nästa sprint (vanligtvis under 2 veckors tid). Teamet väljer ut user stories från backlog och placerar i sprint-backlogen",
+    img: "/Img/planning.png",
   },
   {
-    id: "2",
+    id: "8",
     name: "Daily Scrum",
     ansvarig: "Teamet",
     description:
       "Detta är ett daglig möte där teamet får samtala om vad man har gjort, vad man ska göra och om man stött på några hinder. Detta är ett kort möte. Kallas även stand-up. Fårgor att besvara är: Vad gjorde du igår, vad gör du idag, finns det några hinder? ",
+    img: "/Img/team.png",
   },
   {
-    id: "3",
+    id: "9",
     name: "Sprint review",
     ansvarig: "Teamet",
     description:
       "Sprint review är ett möte i slutet av varje sprint för att presentera vad som producerats under sprinten",
+    img: "/Img/sprint.png",
   },
   {
-    id: "4",
+    id: "10",
     name: "Sprint Retrospective",
     ansvarig: "Teamet",
     description:
       "Sprint Retrospective innebär ett reflekterande möte om vad som fungerat bra under sprinten och vad som kan förändras. Fårgor att besvara är: Vad ska jag börja/sluta/fortsätta göra?",
+
+    img: "/Img/process.svg",
   },
 ];
 
-export default (team, artifacts, ceremonies);
+export const manifest = [
+  {
+    id: 0,
+    item: "4 central processer, individer och interaktiv framför processer, fungerande mjukvara framför omfattande dokumentation, samarbete med kunden framför att förhandla om kontrakt, reagera på förändring framför att strikt följa en uppgjord plan.",
+  },
+  {
+    id: 1,
+    item: "Vår högsta prioritet är att tillfredsställa kunden genom tidig och kontinuerlig leverans av värdefull programvara.",
+  },
+  {
+    id: 2,
+    item: "Välkomna förändrade krav, även sent under utvecklingen. Agila metoder utnyttjar förändring till kundens konkurrensfördel.",
+  },
+
+  {
+    id: 3,
+    item: "Leverera fungerande programvara ofta, med ett par veckors till ett par månaders mellanrum,ju oftare desto bättre.",
+  },
+
+  {
+    id: 4,
+    item: "Verksamhetskunniga och utvecklare måste arbeta tillsammans dagligen under hela projektet.",
+  },
+  {
+    id: 5,
+    item: " Bygg projekt kring motiverade individer. Ge dem den miljö och det stöd de behöver, och lita på att de får jobbet gjort.",
+  },
+  {
+    id: 6,
+    item: "Kommunikation ansikte mot ansikte är det bästa och effektivaste sättet att förmedla information, både till och inom utvecklingsteamet.",
+  },
+  { id: 7, item: "Fungerande programvara är främsta måttet på framsteg." },
+  {
+    id: 8,
+    item: "Agila metoder verkar för uthållighet. Sponsorer, utvecklare och användare skall kunna hålla jämn utvecklingstakt under obegränsad tid.",
+  },
+  {
+    id: 9,
+    item: "Kontinuerlig uppmärksamhet på förstklassig teknik och bra design stärker anpassningsförmågan.",
+  },
+  {
+    id: 10,
+    item: "Enkelhet – konsten att maximera mängden arbete som inte görs – är grundläggande.",
+  },
+  {
+    id: 11,
+    item: "Bäst arkitektur, krav och design växer fram med självorganiserande team.",
+  },
+  {
+    id: 12,
+    item: "Med jämna mellanrum reflekterar teamet över hur det kan bli mer effektivt och justerar sitt beteende därefter.",
+  },
+];
+
+export default (team, artifacts, ceremonies, manifest);
