@@ -53,7 +53,8 @@ nav {
 
 #mainPage,
 #home,
-#manifest {
+#manifest,
+#quiz {
   margin: 2vw;
   padding-top: 1vh;
   text-align: center;
@@ -143,3 +144,30 @@ aside {
 }
 
 /* //////////////////////////////////////////// */
+#quiz-section {
+  text-align: left;
+  padding-bottom: 5vh;
+}
+#quiz button {
+  background-color: var(--third-bg-color);
+  color: white;
+  border: var(--shadow);
+  padding: 0.5vw;
+  margin: 0.1vw;
+}
+#quiz button:hover {
+  background-color: white;
+  color: var(--dark-color);
+  border: var(--shadow);
+  padding: 0.5vw;
+  margin: 0.1vw;
+}
+#quiz button:active {
+  transform: scale(1.1);
+}
+.addPoint {
+  transform: scale(1.1);
+  width: 5vw;
+  background-color: white;
+  color: var(--dark-color);
+}

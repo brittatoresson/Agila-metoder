@@ -1,15 +1,21 @@
 import { useState } from "react";
+import Modal from "./Modal";
 
 function Card(props) {
   const [modal, setModal] = useState(false);
+  const [click, setClick] = useState();
   const [chosenItem, setChosenItem] = useState();
 
   function openModale(e) {
-    setModal(true);
     setChosenItem(e.item);
+    console.log(chosenItem);
+    setModal(true);
+    setClick("hej");
   }
+  console.log(modal);
   return (
     <section className="cards">
+      {/* {modal ? <Modal item={chosenItem} modal={modal} /> : null} */}
       {props.items.map((item, i) => (
         <section key={i} onClick={() => openModale({ item })}>
           <h1>{item.main}</h1>
@@ -19,7 +25,6 @@ function Card(props) {
           <p>{item.slogan}</p>
         </section>
       ))}
-
       {/* open modal */}
       {chosenItem ? (
         <div className={modal === true ? "display-cards" : "display-none"}>
