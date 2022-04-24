@@ -4,6 +4,10 @@ function Navbar() {
   return (
     <>
       <nav>
+        <Link to="/">
+          <p> Home </p>
+        </Link>
+
         <Link to="/quiz">
           <p> Take the quiz </p>
         </Link>
