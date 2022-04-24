@@ -1,4 +1,4 @@
-import AllCards from "./MainContent";
+import AllCards from "./Components/MainContent";
 import "./App.css";
 import HomePage from "./Pages/HomePage";
 import FirstPage from "./Pages/Main";

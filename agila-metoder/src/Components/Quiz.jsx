@@ -1,85 +1,31 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import Navbar from "./TopNav";
 import Modal from "./Modal";
 import Footer from "./Footer";
 
 export default function QuizComponent() {
-  const questions = [
-    {
-      questionText: "Vad är en User Story?",
-      answerOptions: [
-        { answerText: "Klagomål från användaren", correct: false },
-        {
-          answerText: "Behov och värde för användare",
-          correct: true,
-        },
-        { answerText: "Beskrivning av arbetsprocessen", correct: false },
-        { answerText: "Önskemål från användaren", correct: false },
-      ],
-    },
-    {
-      questionText: "Hur lång är en sprint?",
-      answerOptions: [
-        { answerText: "1 h", correct: false },
-        { answerText: "Teamet bestämmer längden", correct: true },
-        { answerText: "Oftast 2 veckor", correct: true },
-        { answerText: "Olika för varje medlem i teamet", correct: false },
-      ],
-    },
-    {
-      questionText: "Vad är en skillnad mellan backlog och sprint backlog?",
-      answerOptions: [
-        { answerText: "Färgen", correct: true },
-        { answerText: "Formen", correct: false },
-        { answerText: "Längden", correct: true },
-      ],
-    },
-    {
-      questionText: "Vad räknas inte som en cermoni i Scrum?",
-      answerOptions: [
-        { answerText: "Sprint", correct: false },
-        { answerText: "Value Points", correct: true },
-        { answerText: "Stand up", correct: false },
-        { answerText: "Sprint eview", correct: false },
-      ],
-    },
-    {
-      questionText: "Vad ingår inte i det agila manifestet??",
-      answerOptions: [
-        {
-          answerText:
-            "Bäst arkitektur, krav och design växer fram med självorganiserande team",
-          correct: false,
-        },
-        {
-          answerText: "Fungerande programvara är främsta måttet på framsteg.",
-          correct: false,
-        },
-        { answerText: "Produktägaren besämmer över processen", correct: true },
-        {
-          answerText:
-            "Enkelhet – konsten att maximera mängden arbete som inte görs – är grundläggande. ",
-          correct: false,
-        },
-      ],
-    },
-  ];
-
+  const [state, setState] = useState();
+  const url = "http://localhost:5002/quizData.json";
   const [points, setPoints] = useState(0);
   const [rightAnswer, setRightAnswer] = useState(false);
   let winMessage = "Grattis! Du klarade quizen!";
   let modal = true;
 
+  //Fetcha data
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setState(data));
+  }, []);
+
+  //Funktion som hanterar val av svar från avndändaren
   function handleAnswer(item) {
     let correct = item.answerOption.correct;
-    console.log(item.answerOption.correct);
-
+    //Om svaret är korrekt adderas att poäng till räknaren
     if (correct) {
       setPoints(points + 1);
     }
-    // if (points > 3) {
-    //   winMessage = "Grattis! Du klarade quizen!";
-    // }
   }
 
   return (
@@ -92,18 +38,22 @@ export default function QuizComponent() {
       ) : null}
       {points > 3 ? <Modal item={winMessage} modal={modal} /> : null}
       <section id="quiz-section">
-        {/* <h1>{winMessage}</h1> */}
-        {questions.map((question, i) => (
-          <section key={i}>
-            <p> {question.questionText} </p>
+        {state
+          ? state.map((question, i) => (
+              <section key={i}>
+                <p> {question.questionText} </p>
 
-            {question.answerOptions.map((answerOption, i) => (
-              <button onClick={(e) => handleAnswer({ answerOption })} key={i}>
-                {answerOption.answerText}
-              </button>
-            ))}
-          </section>
-        ))}
+                {question.answerOptions.map((answerOption, i) => (
+                  <button
+                    onClick={(e) => handleAnswer({ answerOption })}
+                    key={i}
+                  >
+                    {answerOption.answerText}
+                  </button>
+                ))}
+              </section>
+            ))
+          : null}
       </section>
       <Footer />
     </section>

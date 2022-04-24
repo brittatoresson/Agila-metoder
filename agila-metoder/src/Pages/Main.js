@@ -1,4 +1,4 @@
-import FirstPage from "../MainContent";
+import FirstPage from "../Components/MainContent";
 
 function Info() {
   return <FirstPage />;

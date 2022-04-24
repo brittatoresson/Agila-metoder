@@ -13,7 +13,6 @@ function Card(props) {
     setModal(true);
     setClick("hej");
   }
-  console.log(modal);
   return (
     <section className="cards">
       {/* {modal ? <Modal item={chosenItem} modal={modal} /> : null} */}

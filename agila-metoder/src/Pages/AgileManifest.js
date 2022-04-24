@@ -1,11 +1,6 @@
 import { manifest } from "../Components/data";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/TopNav";
-console.log(manifest);
-
-manifest.map((element, i) => {
-  console.log(element.item);
-});
 
 function Manifest() {
   return (
