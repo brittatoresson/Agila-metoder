@@ -3,6 +3,7 @@ import { team, ceremonies, artifacts } from "./Components/data";
 import Card from "./Components/Card";
 import { useEffect, useState } from "react";
 import Navbar from "./Components/TopNav";
+import Footer from "./Components/Footer";
 
 function FirstPage() {
   const [click, setClick] = useState("");
@@ -39,9 +40,7 @@ function FirstPage() {
       {click === "Teamet" ? <Card items={teamArray} /> : null}{" "}
       {click === "Artifacts" ? <Card items={artifactsArray} /> : null}{" "}
       {click === "Processen" ? <Card items={ceremoniesArray} /> : null}{" "}
-      <footer>
-        <p> © Skogis i centrum AB </p>
-      </footer>
+      <Footer />
     </section>
   );
 }

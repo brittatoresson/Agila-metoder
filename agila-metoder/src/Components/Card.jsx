@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./Footer";
 import Modal from "./Modal";
 
 function Card(props) {

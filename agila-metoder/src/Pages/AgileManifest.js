@@ -1,4 +1,5 @@
 import { manifest } from "../Components/data";
+import Footer from "../Components/Footer";
 import Navbar from "../Components/TopNav";
 console.log(manifest);
 
@@ -16,7 +17,7 @@ function Manifest() {
           {element.id > 0 ? element.id + ": " + element.item : element.item}
         </p>
       ))}
-      {/* <Footer/> make a footer component */}
+      <Footer />
     </section>
   );
 }

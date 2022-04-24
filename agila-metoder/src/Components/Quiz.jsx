@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./TopNav";
 import Modal from "./Modal";
+import Footer from "./Footer";
 
 export default function QuizComponent() {
   const questions = [
@@ -104,6 +105,7 @@ export default function QuizComponent() {
           </section>
         ))}
       </section>
+      <Footer />
     </section>
   );
 }

@@ -5,6 +5,7 @@ import FirstPage from "./Pages/Main";
 import Quiz from "./Pages/Quiz";
 import Manifest from "./Pages/AgileManifest";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
