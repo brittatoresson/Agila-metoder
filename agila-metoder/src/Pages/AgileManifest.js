@@ -28,10 +28,10 @@ function Manifest() {
               {element.id > 0 ? (
                 element.id + ": " + element.item
               ) : (
-                <h4>
-                  Det agila manifestet beskriver 12 grundprinciper att arbeta
+                <b>
+                  et agila manifestet beskriver 12 grundprinciper att arbeta
                   efter:
-                </h4>
+                </b>
               )}
             </p>
           ))
