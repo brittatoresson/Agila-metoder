@@ -91,10 +91,9 @@ h1 {
   align-items: center;
 }
 .display-cards img {
-  transform: scale(1.5);
-  box-shadow: (--shadow);
+  transform: scale(2.2);
   margin: 1rem;
-  border: 2px solid var(--third-bg-color);
+  padding: 0.5rem;
 }
 .display-cards li {
   padding-top: 1rem;
@@ -122,7 +121,11 @@ h1 {
 .cards section {
   width: 70%;
 }
-.cards section p {
+.cards h1 {
+  margin-top: 0%;
+  text-align: center;
+}
+.cards p {
   text-align: left;
 }
 .cards section:first-child h1 {
@@ -130,10 +133,6 @@ h1 {
 }
 .cards section:first-child img {
   display: none;
-}
-.cards h1 {
-  margin-top: 0%;
-  text-align: left;
 }
 
 aside {
@@ -152,8 +151,17 @@ aside {
   flex-direction: row;
   justify-content: space-around;
 }
-.toggle-nav div {
-  padding: 1rem;
+.toggle-nav h1 {
+  margin: 0.5rem;
+}
+
+.toggle-nav-div {
+  background-color: var(--main-bg-color);
+
+  margin: 1vh;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
 }
 .toggle-nav img {
   height: 40px;
@@ -224,7 +232,7 @@ aside {
   width: 4vw;
 }
 .dropbtn {
-  background-color: rgb(194, 225, 232);
+  background-color: var(--light-color);
   border: var(--shadow);
   padding-bottom: 0;
   width: 6vw;

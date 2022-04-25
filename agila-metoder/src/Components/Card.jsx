@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Footer from "./Footer";
-import Modal from "./Modal";
 
 function Card(props) {
   const [modal, setModal] = useState(false);
@@ -34,9 +32,12 @@ function Card(props) {
               src={chosenItem.img}
               className={chosenItem.id == 5 ? "burnDown" : null}
             ></img>
-            {chosenItem.name ? <li>{chosenItem.name}</li> : null}
+            {chosenItem.name ? <h3>{chosenItem.name}</h3> : null}
             {chosenItem.ansvarig ? (
-              <li>Ansvarig: {chosenItem.ansvarig}</li>
+              <li>
+                <b>Ansvarig:</b>
+                {chosenItem.ansvarig}
+              </li>
             ) : null}
           </div>
           {chosenItem.solgan ? <li>{chosenItem.slogan}</li> : null}
