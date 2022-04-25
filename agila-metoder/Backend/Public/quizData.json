@@ -2,39 +2,48 @@
   {
     "questionText": "Vad är en User Story?",
     "answerOptions": [
-      { "answerText": "Klagomål från användaren", "correct": false },
+      { "answerText": "Klagomål från användaren", "correct": false, "id": 1 },
       {
         "answerText": "Behov och värde för användare",
-        "correct": true
+        "correct": true,
+        "id": 2
       },
-      { "answerText": "Beskrivning av arbetsprocessen", "correct": false },
-      { "answerText": "Önskemål från användaren", "correct": false }
+      {
+        "answerText": "Beskrivning av arbetsprocessen",
+        "correct": false,
+        "id": 3
+      },
+      { "answerText": "Önskemål från användaren", "correct": false, "id": 4 }
     ]
   },
   {
     "questionText": "Hur lång är en sprint?",
     "answerOptions": [
-      { "answerText": "1 h", "correct": false },
-      { "answerText": "Teamet bestämmer längden", "correct": true },
-      { "answerText": "Oftast 2 veckor", "correct": true },
-      { "answerText": "Olika för varje medlem i teamet", "correct": false }
+      { "answerText": "1 h", "correct": false, "id": 1 },
+      { "answerText": "Teamet bestämmer längden", "correct": true, "id": 2 },
+      { "answerText": "Oftast 2 veckor", "correct": true, "id": 3 },
+      {
+        "answerText": "Olika för varje medlem i teamet",
+        "correct": false,
+        "id": 4
+      }
     ]
   },
   {
     "questionText": "Vad är en skillnad mellan backlog och sprint backlog?",
     "answerOptions": [
-      { "answerText": "Färgen", "correct": true },
-      { "answerText": "Formen", "correct": false },
-      { "answerText": "Längden", "correct": true }
+      { "answerText": "Färgen", "correct": true, "id": 1 },
+      { "answerText": "Formen", "correct": false, "id": 2 },
+      { "answerText": "Längden", "correct": true, "id": 3 }
     ]
   },
   {
     "questionText": "Vad räknas inte som en cermoni i Scrum?",
     "answerOptions": [
-      { "answerText": "Sprint", "correct": false },
-      { "answerText": "Value Points", "correct": true },
-      { "answerText": "Stand up", "correct": false },
-      { "answerText": "Sprint eview", "correct": false }
+      { "answerText": "Sprint", "correct": false, "id": 1 },
+      { "answerText": "Value Points", "correct": true, "id": 2 },
+      { "answerText": "Stand up", "correct": false, "id": 3 },
+      { "answerText": "Sprint eview", "correct": false, "id": 4 }
     ]
   },
   {
@@ -42,19 +51,23 @@
     "answerOptions": [
       {
         "answerText": "Bäst arkitektur, krav och design växer fram med självorganiserande team",
-        "correct": false
+        "correct": false,
+        "id": 1
       },
       {
         "answerText": "Fungerande programvara är främsta måttet på framsteg.",
-        "correct": false
+        "correct": false,
+        "id": 2
       },
       {
         "answerText": "Produktägaren besämmer över processen",
-        "correct": true
+        "correct": true,
+        "id": 3
       },
       {
-        "answerText": "Enkelhet – konsten att maximera mängden arbete som inte görs – är grundläggande. ",
-        "correct": false
+        "answerText": "Konsten att maximera mängden arbete som inte görs är grundläggande",
+        "correct": false,
+        "id": 4
       }
     ]
   }
