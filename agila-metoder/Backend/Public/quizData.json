@@ -19,31 +19,31 @@
   {
     "questionText": "Hur lång är en sprint?",
     "answerOptions": [
-      { "answerText": "1 h", "correct": false, "id": 1 },
-      { "answerText": "Teamet bestämmer längden", "correct": true, "id": 2 },
-      { "answerText": "Oftast 2 veckor", "correct": true, "id": 3 },
+      { "answerText": "1 h", "correct": false, "id": 5 },
+      { "answerText": "Teamet bestämmer längden", "correct": true, "id": 6 },
+      { "answerText": "Oftast 2 veckor", "correct": true, "id": 7 },
       {
         "answerText": "Olika för varje medlem i teamet",
         "correct": false,
-        "id": 4
+        "id": 8
       }
     ]
   },
   {
     "questionText": "Vad är en skillnad mellan backlog och sprint backlog?",
     "answerOptions": [
-      { "answerText": "Färgen", "correct": true, "id": 1 },
-      { "answerText": "Formen", "correct": false, "id": 2 },
-      { "answerText": "Längden", "correct": true, "id": 3 }
+      { "answerText": "Färgen", "correct": true, "id": 9 },
+      { "answerText": "Formen", "correct": false, "id": 10 },
+      { "answerText": "Längden", "correct": true, "id": 11 }
     ]
   },
   {
     "questionText": "Vad räknas inte som en ceremoni i Scrum?",
     "answerOptions": [
-      { "answerText": "Sprint", "correct": false, "id": 1 },
-      { "answerText": "Value Points", "correct": true, "id": 2 },
-      { "answerText": "Stand up", "correct": false, "id": 3 },
-      { "answerText": "Sprint eview", "correct": false, "id": 4 }
+      { "answerText": "Sprint", "correct": false, "id": 12 },
+      { "answerText": "Value Points", "correct": true, "id": 13 },
+      { "answerText": "Stand up", "correct": false, "id": 14 },
+      { "answerText": "Sprint Review", "correct": false, "id": 15 }
     ]
   },
   {
@@ -52,22 +52,22 @@
       {
         "answerText": "Bäst arkitektur, krav och design växer fram med självorganiserande team",
         "correct": false,
-        "id": 1
+        "id": 16
       },
       {
         "answerText": "Fungerande programvara är främsta måttet på framsteg.",
         "correct": false,
-        "id": 2
+        "id": 17
       },
       {
         "answerText": "Produktägaren besämmer över processen",
         "correct": true,
-        "id": 3
+        "id": 18
       },
       {
         "answerText": "Konsten att maximera mängden arbete som inte görs är grundläggande",
         "correct": false,
-        "id": 4
+        "id": 19
       }
     ]
   }

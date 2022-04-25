@@ -7,8 +7,8 @@ export default function QuizComponent() {
   const [state, setState] = useState();
   const url = "http://localhost:5002/quizData.json";
   const [points, setPoints] = useState(0);
-  const [correct, setCorrect] = useState(false);
-  let winMessage = "Grattis! Du klarade quizen!";
+  const [correctId, setCorrectId] = useState();
+  let winMessage = "Grattis! Du klarade quizet!";
   let modal = true;
 
   //Fetcha data
@@ -21,35 +21,39 @@ export default function QuizComponent() {
   //Funktion som hanterar val av svar från avndändaren
   function handleAnswer(item) {
     //Om svaret är korrekt adderas att poäng till räknaren
-    if (item.answerOption.correct) {
-      setCorrect(true);
+    if (item.answerOption.correct && points < 7) {
+      setCorrectId(item.answerOption.id);
       setPoints(points + 1);
     } else {
-      setCorrect(false);
+      // setCorrect(false);
     }
   }
-  console.log(correct);
   return (
     <section id="quiz" className="scroller">
-      {points > 0 ? (
-        <p className={points ? "addPoint" : null} id="points">
-          Poäng: {points}
-        </p>
-      ) : null}
-      {points > 3 ? <Modal item={winMessage} modal={modal} /> : null}
+      <h4 className="addPoint">Poäng: {points}</h4>
+      {points > 4 ? <Modal item={winMessage} modal={modal} /> : null}
       <section id="quiz-section">
         {state
           ? state.map((question, i) => (
               <section key={i} id="answers">
-                <p> {question.questionText} </p>
+                <h4> {question.questionText} </h4>
 
                 {question.answerOptions.map((answerOption, i) => (
-                  <button
-                    onClick={(e) => handleAnswer({ answerOption })}
+                  <div
+                    //vid klick kallas handlAnswerfunktionen, om correctId har fått en träff kallas ej funktionen.
+                    onClick={
+                      correctId !== answerOption.id
+                        ? (e) => handleAnswer({ answerOption })
+                        : null
+                    }
                     key={i}
+                    //om rätt svar så ändras klassnamnet
+                    className={
+                      correctId == answerOption.id ? "rightAnswer" : null
+                    }
                   >
-                    {answerOption.id}: {answerOption.answerText}
-                  </button>
+                    {i + 1}: {answerOption.answerText}
+                  </div>
                 ))}
               </section>
             ))

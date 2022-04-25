@@ -157,7 +157,6 @@ aside {
 
 .toggle-nav-div {
   background-color: var(--main-bg-color);
-
   margin: 1vh;
   width: 15vw;
   height: 15vw;
@@ -175,22 +174,18 @@ aside {
   align-items: center;
   padding-bottom: 5vh;
 }
-#quiz button {
+#quiz div {
   background-color: var(--third-bg-color);
   color: white;
   border: var(--shadow);
   padding: 0.5vw;
   margin: 0.1vw;
 }
-#quiz button:hover,
-/* .dropbtn:hover, */
+#quiz div:hover,
 .showDropdown a:hover {
   background-color: white;
   color: var(--dark-color);
   border: var(--shadow);
-}
-#quiz button:active {
-  transform: scale(1.1);
 }
 
 #answers {
@@ -199,13 +194,22 @@ aside {
   width: 50vh;
 }
 
+#quiz .rightAnswer {
+  background-color: white;
+  box-shadow: inset 0px 0px 2px 1px var(--third-bg-color);
+  color: black;
+}
+
 .addPoint {
   transform: scale(1.1);
   width: 10vw;
   background-color: white;
   color: var(--dark-color);
-  border: var(--shadow);
+  box-shadow: 0px 0px 2px 1px var(--third-bg-color);
   padding: 1vh;
+  margin: 1rem;
+  position: sticky;
+  top: 0;
 }
 
 /* //////////////////////////////////////////// */

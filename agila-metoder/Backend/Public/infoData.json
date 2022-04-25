@@ -1,7 +1,7 @@
 {
   "team": [
     {
-      "main": "Teamet består av medlemmar som med sin gemensamma kunskap kan skapa en given produkt,  storleken på teamet kan variera men brukar bestå av 3-10 personer."
+      "main": "Teamet består av medlemmar som med sin gemensamma kunskap kan skapa en färdig produkt,  storleken på teamet kan variera men brukar bestå av 3-10 personer."
     },
     {
       "id": "0",
@@ -107,7 +107,7 @@
   "manifest": [
     {
       "id": 0,
-      "item": "Det agila arbetssättet vilar på 4 grunder: individer och interaktiv framför processer, fungerande mjukvara framför omfattande dokumentation, samarbete med kunden framför att förhandla om kontrakt, reagera på förändring framför att strikt följa en uppgjord plan."
+      "item": "Det agila arbetssättet vilar på 4 grunder: individer och interaktioner framför processer, fungerande mjukvara framför omfattande dokumentation, samarbete med kunden framför att förhandla om kontrakt, reagera på förändring framför att strikt följa en uppgjord plan."
     },
     {
       "id": 1,
