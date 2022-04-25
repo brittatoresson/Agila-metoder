@@ -1,20 +1,10 @@
-import { team, ceremonies, artifacts } from "./data";
 import Card from "./Card";
 import { useEffect, useState } from "react";
-import Navbar from "./TopNav";
-import Footer from "./Footer";
 
 function FirstPage() {
   const [click, setClick] = useState("");
   const [state, setState] = useState("");
   const url = "http://localhost:5002/infoData.json";
-  // let teamArray = [];
-  // let ceremoniesArray = [];
-  // let artifactsArray = [];
-
-  // team.forEach((item) => teamArray.push(item));
-  // ceremonies.forEach((item) => ceremoniesArray.push(item));
-  // artifacts.forEach((item) => artifactsArray.push(item));
 
   function handleClick(e) {
     setClick(e.target.innerText);
