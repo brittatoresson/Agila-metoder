@@ -29,7 +29,7 @@ function Manifest() {
                 element.id + ": " + element.item
               ) : (
                 <b>
-                  et agila manifestet beskriver 12 grundprinciper att arbeta
+                  Det agila manifestet beskriver 12 grundprinciper att arbeta
                   efter:
                 </b>
               )}

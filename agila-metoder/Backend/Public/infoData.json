@@ -37,7 +37,7 @@
       "id": "3",
       "name": "Product backlog",
       "ansvarig": "Produktägaren",
-      "description": "En Product Backlog är en ”att göra”-lista som innehåller alla features som behöver produceras för att skapa en färdig produkt. Varje punkt i listan beskrivs som en User Story med fokus på VAD och VARFÖR denna del är viktig för slutprodukten. Agil estimering används för att avgöra hur mycket arbete som krävs för varje user story. Detta görs genom att poängsätts hur viktig varje User Story är och hur krävande den är att genomföra. Rangordning i backlogen = viktighet/svårighet. Vi börjar arbeta med de storys som är högst prioriterade och som ger mest nytta.",
+      "description": "En Product Backlog är en ”att göra”-lista som innehåller alla features som behöver produceras för att skapa en färdig produkt. Varje punkt i listan beskrivs som en User Story med fokus på VAD och VARFÖR denna del är viktig för slutprodukten. Backlogen rangordnas utifrån viktighet och svårighet, teamet börjar arbeta med de storys som är högst prioriterade och som ger mest värde.",
       "img": "/img/backlog (1).png"
     },
     {
@@ -53,6 +53,13 @@
       "ansvarig": "",
       "description": "En Bundown Chart är ett verktyg som följer arbetstakten under en sprint. Här kan man följa User Story Points i förhållande till tid.",
       "img": "https://www.researchgate.net/profile/Timothy-Chick/publication/266049888/figure/fig6/AS:668437126869000@1536379238248/Sample-Sprint-Burn-Down-Chart.png"
+    },
+    {
+      "id": "6",
+      "name": "Agil Estimering",
+      "ansvarig": "Produktägare och team",
+      "description": "Agil estimering används för att avgöra hur mycket arbete som krävs för varje user story. Detta görs genom att poängsätta hur viktig varje user story är och hur krävande den är att genomföra. Backlogen rangordnas utifrån estimeringen. Teamet börjar arbeta med de storys som är högst prioriterade och som ger mest nytta. För att underlätta estimeringen bör man sätta en \"Definition of Done\"som definerar målet med varje user story. ",
+      "img": "Img/calendar.png"
     }
   ],
   "ceremonies": [

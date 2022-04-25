@@ -38,7 +38,7 @@
     ]
   },
   {
-    "questionText": "Vad räknas inte som en cermoni i Scrum?",
+    "questionText": "Vad räknas inte som en ceremoni i Scrum?",
     "answerOptions": [
       { "answerText": "Sprint", "correct": false, "id": 1 },
       { "answerText": "Value Points", "correct": true, "id": 2 },
