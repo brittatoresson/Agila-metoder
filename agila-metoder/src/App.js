@@ -6,11 +6,13 @@ import Quiz from "./Pages/Quiz";
 import Manifest from "./Pages/AgileManifest";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Footer from "./Components/Footer";
+import Navbar from "./Components/TopNav";
 
 function App() {
   return (
     <main>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/main" element={<FirstPage />}></Route>

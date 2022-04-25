@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import Navbar from "./TopNav";
 import Modal from "./Modal";
 import Footer from "./Footer";
 
@@ -8,7 +7,7 @@ export default function QuizComponent() {
   const [state, setState] = useState();
   const url = "http://localhost:5002/quizData.json";
   const [points, setPoints] = useState(0);
-  const [rightAnswer, setRightAnswer] = useState(false);
+  const [correct, setCorrect] = useState(false);
   let winMessage = "Grattis! Du klarade quizen!";
   let modal = true;
 
@@ -21,16 +20,17 @@ export default function QuizComponent() {
 
   //Funktion som hanterar val av svar från avndändaren
   function handleAnswer(item) {
-    let correct = item.answerOption.correct;
     //Om svaret är korrekt adderas att poäng till räknaren
-    if (correct) {
+    if (item.answerOption.correct) {
+      setCorrect(true);
       setPoints(points + 1);
+    } else {
+      setCorrect(false);
     }
   }
-
+  console.log(correct);
   return (
-    <section id="quiz">
-      <Navbar />
+    <section id="quiz" className="scroller">
       {points > 0 ? (
         <p className={points ? "addPoint" : null} id="points">
           Poäng: {points}
@@ -40,7 +40,7 @@ export default function QuizComponent() {
       <section id="quiz-section">
         {state
           ? state.map((question, i) => (
-              <section key={i}>
+              <section key={i} id="answers">
                 <p> {question.questionText} </p>
 
                 {question.answerOptions.map((answerOption, i) => (
@@ -48,7 +48,7 @@ export default function QuizComponent() {
                     onClick={(e) => handleAnswer({ answerOption })}
                     key={i}
                   >
-                    {answerOption.answerText}
+                    {answerOption.id}: {answerOption.answerText}
                   </button>
                 ))}
               </section>

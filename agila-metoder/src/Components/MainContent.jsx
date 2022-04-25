@@ -28,27 +28,28 @@ function FirstPage() {
   }, []);
 
   return (
-    <section id="mainPage" className="scroller">
-      <Navbar />
-      <section className={click ? "toggle-nav" : null}>
-        <div>
-          <h1 onClick={(e) => handleClick(e)}>Teamet </h1>
-          <img src="/Img/teamWomen.png" alt="pic of team" />
-        </div>
-        <div>
-          <h1 onClick={(e) => handleClick(e)}>Artifacts</h1>
-          <img src="/Img/backlog (1).png" alt="pic of backlog" />
-        </div>
-        <div>
-          <h1 onClick={(e) => handleClick(e)}>Processen</h1>
-          <img src="/Img/process.svg" alt="pic of process" />
-        </div>
+    <>
+      {" "}
+      <section id="mainPage" className="scroller">
+        <section className={click ? "toggle-nav" : null}>
+          <div>
+            <h1 onClick={(e) => handleClick(e)}>Teamet </h1>
+            <img src="/Img/teamWomen.png" alt="pic of team" />
+          </div>
+          <div>
+            <h1 onClick={(e) => handleClick(e)}>Artifacts</h1>
+            <img src="/Img/backlog (1).png" alt="pic of backlog" />
+          </div>
+          <div>
+            <h1 onClick={(e) => handleClick(e)}>Processen</h1>
+            <img src="/Img/process.svg" alt="pic of process" />
+          </div>
+        </section>
+        {click === "Teamet" ? <Card items={state.team} /> : null}{" "}
+        {click === "Artifacts" ? <Card items={state.artifacts} /> : null}{" "}
+        {click === "Processen" ? <Card items={state.ceremonies} /> : null}{" "}
       </section>
-      {click === "Teamet" ? <Card items={state.team} /> : null}{" "}
-      {click === "Artifacts" ? <Card items={state.artifacts} /> : null}{" "}
-      {click === "Processen" ? <Card items={state.ceremonies} /> : null}{" "}
-      <Footer />
-    </section>
+    </>
   );
 }
 

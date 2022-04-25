@@ -1,18 +1,13 @@
 import { Link } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 function Navbar() {
   return (
     <>
       <nav>
-        <Link to="/">
-          <p> Home </p>
-        </Link>
-
-        <Link to="/quiz">
-          <p> Take the quiz </p>
-        </Link>
+        <Dropdown />
       </nav>
-      <Link to="/">
+      <Link to="/" id="headerName">
         <h1>Scrum</h1>
         <p> - ett agilt arbetssätt</p>{" "}
       </Link>
