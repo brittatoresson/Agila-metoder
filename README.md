@@ -25,18 +25,18 @@ utvecklat denna hemsidan.
 Ni kommer att använda er av Github projects.
 
 Kunskaper
-● Om olika typer av projektformer, såväl agila som traditionella.
-● Om hur en projektmetodik påverkar projektets arbetsprocess.
-● I hur man arbetar i grupp med agila metoder
+* Om olika typer av projektformer, såväl agila som traditionella.
+* Om hur en projektmetodik påverkar projektets arbetsprocess.
+* I hur man arbetar i grupp med agila metoder
 
 Färdigheter
-● I att leda och ledas i agila processer
-● I att jämföra traditionella och agila projektarbetsmetoder
-● I att förklara för- och nackdelar med olika typer av projektmetoder
-● I att välja ut rätt metod för rätt uppgift
+* I  att leda och ledas i agila processer
+* I att jämföra traditionella och agila projektarbetsmetoder
+* I att förklara för- och nackdelar med olika typer av projektmetoder
+* I att välja ut rätt metod för rätt uppgift
 
 Kompetenser
-● Att planera tekniska projekt utifrån en agil arbetsmetodik
+Att planera tekniska projekt utifrån en agil arbetsmetodik
 Kunskapskrav
 Bedömning görs på en tregradig betygsskala Väl godkänd(VG), Godkänd(G) och Icke
 godkänd(IG).
