@@ -28,6 +28,9 @@ function Dropdown() {
         <Link to="/quiz">
           <p> Quiz </p>
         </Link>
+        <Link to="/learnProcess">
+          <p> Exempel </p>
+        </Link>
       </div>
     </div>
   );
