@@ -12,13 +12,13 @@ vara bra förklaringar på hur ett team på 4-5 personer skall gå tillväga fö
 som projektmetodik.
 Användarna vill veta vad dessa koncept handlar om:
 * Rollerna
-● Backlog
-● Sprint
-● Sprinplanning
-● Scrum artefacts
-● Sprint Review
-● Sprint Retrospective
-● Agil estimering
+* Backlog
+* Sprint
+* Sprinplanning
+* Scrum artefacts
+* Sprint Review
+* Sprint Retrospective
+* Agil estimering
 
 Ni skall visa att ni har förståelse för agila metoder och ha applicerat era kunskaper när ni
 utvecklat denna hemsidan.
