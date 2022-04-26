@@ -11,7 +11,7 @@ Hemsidan bör därför vara en grundlig guide i lekmannatermer som alla kan för
 vara bra förklaringar på hur ett team på 4-5 personer skall gå tillväga för att applicera Scrum
 som projektmetodik.
 Användarna vill veta vad dessa koncept handlar om:
-● Rollerna
+* Rollerna
 ● Backlog
 ● Sprint
 ● Sprinplanning
