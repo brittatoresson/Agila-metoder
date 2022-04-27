@@ -7,7 +7,11 @@ function FirstPage() {
   const url = "http://localhost:5002/infoData.json";
 
   function handleClick(e) {
-    setClick(e.target.innerText);
+    if (e.target.innerText) {
+      setClick(e.target.innerText);
+    } else {
+      setClick(e.target.alt);
+    }
   }
 
   //Fetcha data
@@ -24,15 +28,31 @@ function FirstPage() {
         <section className={click ? "toggle-nav" : null}>
           <div className={click === "Team" ? "toggle-nav-div" : null}>
             <h1 onClick={(e) => handleClick(e)}>Team </h1>
-            <img src="/Img/teamWomen.png" alt="pic of team" />
+            <img
+              src="/Img/teamWomen.png"
+              alt="Team"
+              onClick={(e) => handleClick(e)}
+            />
           </div>
           <div className={click === "Artifacts" ? "toggle-nav-div" : null}>
-            <h1 onClick={(e) => handleClick(e)}>Artifacts</h1>
-            <img src="/Img/backlog (1).png" alt="pic of backlog" />
+            <article>
+              <h1 onClick={(e) => handleClick(e)}>Artifacts</h1>
+              <img
+                src="/Img/backlog (1).png"
+                alt="Artifacts"
+                onClick={(e) => handleClick(e)}
+              />
+            </article>
           </div>
           <div className={click === "Process" ? "toggle-nav-div" : null}>
-            <h1 onClick={(e) => handleClick(e)}>Process</h1>
-            <img src="/Img/process.svg" alt="pic of process" />
+            <article>
+              <h1 onClick={(e) => handleClick(e)}>Process</h1>
+              <img
+                src="/Img/process.svg"
+                alt="Process"
+                onClick={(e) => handleClick(e)}
+              />
+            </article>
           </div>
         </section>
         {click === "Team" ? <Card items={state.team} /> : null}{" "}
