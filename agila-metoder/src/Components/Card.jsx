@@ -27,11 +27,8 @@ function Card(props) {
       {chosenItem ? (
         <div className={modal === true ? "display-cards" : "display-none"}>
           <aside onClick={() => setModal(false)}>X</aside>
-          <div>
-            <img
-              src={chosenItem.img}
-              className={chosenItem.id == 5 ? "burnDown" : null}
-            ></img>
+          <div className={chosenItem.id == 5 ? "burnDown" : null}>
+            <img src={chosenItem.img}></img>
             {chosenItem.name ? <h3>{chosenItem.name}</h3> : null}
             {chosenItem.ansvarig ? (
               <li>
