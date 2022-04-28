@@ -12,23 +12,28 @@ function SvampEntusiasterna() {
         <li>4. Recept med svamp (vego, gryta, paj, soppa) </li>
         <li>5. Lista över medlemmar i SvampEntusiasterna </li>
       </article>
-      <h4> User Story med Agil estimering:</h4>
+      <h4> User Story och Agil estimering:</h4>
       <article className="article-card">
         <p>
           <b>"2. Lista över svampar"</b> = ge användare en lista med bilder och
           beskrivning över ätbara och gifta svampar så använadre tydligt kan
           känna igen en oätlig svamp i skogen.
         </p>
-        <li>Värde: 144 p</li>
-        <li>Svårighet: 34 p</li>
-        <li>Story value points => 144/34 = 4</li>
+        <ul>
+          <li>Värde: 144 p</li>
+          <li>Svårighet: 34 p</li>
+          <li>Story value points => 144/34 = 4p</li>
+        </ul>
+
         <p>
           <b> "2. Lista över medlemmar"</b> = ge användare möjlighet att söka
           upp en entusiast i närheten.
         </p>
-        <li>Värde: 21 p</li>
-        <li>Svårighet: 13 p </li>
-        <li>Story value points => 21/13 = 1.5</li>
+        <ul>
+          <li>Värde: 21 p</li>
+          <li>Svårighet: 13 p </li>
+          <li>Story value points => 21/13 = 1.5p </li>
+        </ul>
       </article>
       <h4> Sprintplannering </h4>
       <article className="article-card">

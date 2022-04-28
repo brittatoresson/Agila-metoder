@@ -2,28 +2,22 @@ import { useState } from "react";
 
 function Card(props) {
   const [modal, setModal] = useState(false);
-  const [click, setClick] = useState();
   const [chosenItem, setChosenItem] = useState();
 
   function openModale(e) {
     setChosenItem(e.item);
-    console.log(chosenItem);
     setModal(true);
-    setClick("hej");
   }
   return (
     <section className="cards">
-      {/* {modal ? <Modal item={chosenItem} modal={modal} /> : null} */}
       {props.items.map((item, i) => (
         <section key={i} onClick={() => openModale({ item })}>
           <h1>{item.main}</h1>
-          {/* {item.main ? <h1>{item.main}</h1> : null} */}
           <img src={item.img}></img>
           <h1>{item.name}</h1>
           <p>{item.slogan}</p>
         </section>
       ))}
-      {/* open modal */}
       {chosenItem ? (
         <div className={modal === true ? "display-cards" : "display-none"}>
           <aside onClick={() => setModal(false)}>X</aside>

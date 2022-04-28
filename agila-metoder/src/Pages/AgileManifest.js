@@ -16,26 +16,28 @@ function Manifest() {
   return (
     <section id="manifest" className="scroller">
       <h3>
-        Det agila arbetssättet vilar på 4 grunder: individer och interaktiv
+        Det agila arbetssättet vilar på 4 grunder: individer och interaktioner
         framför processer, fungerande mjukvara framför omfattande dokumentation,
         samarbete med kunden framför att förhandla om kontrakt, reagera på
         förändring framför att strikt följa en uppgjord plan.
       </h3>
 
-      {state
-        ? state.manifest.map((element, i) => (
-            <p key={i}>
-              {element.id > 0 ? (
-                element.id + ": " + element.item
-              ) : (
-                <b>
-                  Det agila manifestet beskriver 12 grundprinciper att arbeta
-                  efter:
-                </b>
-              )}
-            </p>
-          ))
-        : null}
+      <article className="article-card">
+        {state
+          ? state.manifest.map((element, i) => (
+              <p key={i}>
+                {element.id > 0 ? (
+                  element.id + ": " + element.item
+                ) : (
+                  <b>
+                    Det agila manifestet beskriver 12 grundprinciper att arbeta
+                    efter:
+                  </b>
+                )}
+              </p>
+            ))
+          : null}
+      </article>
       <Footer />
     </section>
   );

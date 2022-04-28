@@ -24,8 +24,6 @@ export default function QuizComponent() {
     if (item.answerOption.correct && points < 7) {
       setCorrectId(item.answerOption.id);
       setPoints(points + 1);
-    } else {
-      // setCorrect(false);
     }
   }
   return (
